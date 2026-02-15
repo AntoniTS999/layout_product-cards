@@ -5,58 +5,59 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 200px;
-  height: 408px;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  width: $card-width;
+  height: $card-height;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
   box-sizing: border-box;
 
   &__image {
-    width: 160px;
-    height: 134px;
-    margin-right: 3px;
+    width: $card-image-width;
+    height: $card-image-height;
   }
 
   &__product {
     display: flex;
     height: auto;
-    width: 166px;
+    width: $card-content-width;
     flex-direction: column;
     justify-content: space-between;
 
     &--text {
-      color: $main-color;
-      font-size: 12px;
+      color: $color-text;
+      font-size: $font-size-medium;
       font-weight: 500;
-      line-height: 18px;
+      line-height: $line-height-medium;
     }
     &--code {
-      color: $small-text;
+      color: $color-secondary;
       font-weight: 400;
-      font-size: 10px;
-      line-height: 14px;
+      font-size: $font-size-small;
+      line-height: $line-height-small;
       height: 14px;
       width: 98px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
   &__price {
     display: flex;
-    width: 166px;
+    width: $card-content-width;
     height: 18px;
     align-items: center;
     justify-content: space-between;
 
     &-label {
-      color: $small-text;
-      font-size: 12px;
+      color: $color-secondary;
+      font-size: $font-size-medium;
       font-weight: 400;
-      line-height: 18px;
+      line-height: $line-height-medium;
     }
     &-value {
-      color: $main-color;
-      font-size: 16px;
+      color: $color-text;
+      font-size: $font-size-large;
       font-weight: 700;
-      line-height: 18px;
+      line-height: $line-height-medium;
     }
   }
 
@@ -67,20 +68,20 @@
     align-items: center;
 
     &--buy {
-      background-color: $button-color;
+      background-color: $color-primary;
       color: #fff;
       font-size: 14px;
       font-weight: 700;
-      width: 166px;
-      height: 40px;
-      border-radius: 5px;
-      border: 1px solid $button-color;
+      width: $btn-width;
+      height: $btn-height;
+      border-radius: $btn-radius;
+      border: 1px solid $color-primary;
     }
 
     &--buy:hover {
-      border: 1px solid $button-color;
+      border: 1px solid $color-primary;
       background-color: #f3f3f3;
-      color: $button-color;
+      color: $color-primary;
     }
   }
 }

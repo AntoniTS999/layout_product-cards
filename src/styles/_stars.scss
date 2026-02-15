@@ -3,23 +3,27 @@
 /* #region stars */
 .stars {
   display: flex;
-  width: 166px;
-  height: 16px;
+  width: $stars-width;
+  height: $star-size;
   justify-content: space-between;
   align-items: center;
+  font-size: $font-size-small;
+  font-weight: 400;
+
   &__star {
-    height: 16px;
-    width: 16px;
+    height: $star-size;
+    width: $star-size;
     background-image: url(../images/star.svg);
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 4px;
+    margin-right: $stars-spacing;
     display: block;
   }
 
-  &__star:last-child {
+  &__star:last-of-type {
     margin-right: 0;
   }
+
   &--1 .stars__star:nth-child(-n + 1),
   &--2 .stars__star:nth-child(-n + 2),
   &--3 .stars__star:nth-child(-n + 3),
@@ -29,11 +33,10 @@
   }
 
   &__text {
-    color: $main-color;
-    font-size: 10px;
-    font-weight: 400;
-    margin-left: 16px;
+    color: $color-text;
     line-height: 14px;
-    height: 16px;
+    height: $star-size;
+    width: 57px;
+    text-align: right;
   }
 }
