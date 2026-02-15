@@ -1,15 +1,16 @@
-@use '../styles/variables' as *;
+@use './variables' as *;
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: $card-width;
   height: $card-height;
   border: $border-width solid $border-color;
   border-radius: $border-radius;
   box-sizing: border-box;
+  padding: 16px;
 
   &__image {
     width: $card-image-width;
@@ -76,6 +77,9 @@
       height: $btn-height;
       border-radius: $btn-radius;
       border: 1px solid $color-primary;
+      text-decoration: none;
+      text-align: center;
+      line-height: $btn-height;
     }
 
     &--buy:hover {
