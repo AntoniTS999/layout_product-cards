@@ -10,11 +10,14 @@
   border: $border-width solid $border-color;
   border-radius: $border-radius;
   box-sizing: border-box;
-  padding: 16px;
+  padding-top: 32px;
+  padding-bottom: 16px;
 
-  &__image {
+  &__image--one {
     width: $card-image-width;
     height: $card-image-height;
+    margin-left: $card-image-margin;
+    margin-right: $card-image-margin;
   }
 
   &__product {
@@ -29,6 +32,8 @@
       font-size: $font-size-medium;
       font-weight: 500;
       line-height: $line-height-medium;
+      margin-bottom: 16px;
+
     }
     &--code {
       color: $color-secondary;
@@ -67,6 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 
     &--buy {
       background-color: $color-primary;
